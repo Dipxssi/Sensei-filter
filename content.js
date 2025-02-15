@@ -41,7 +41,6 @@ chrome.storage.sync.get({ keywords: [], extensionEnabled: true }, (result) => {
                 });
             });
         }
-
         // Initial call to hide videos based on current keywords
         hideVideos(keywords);
     }
