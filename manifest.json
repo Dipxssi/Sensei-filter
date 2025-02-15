@@ -2,7 +2,7 @@
 "update_url": "https://clients2.google.com/service/update2/crx",
 
     "manifest_version": 3,
-    "name": "YouTube Filter (Stop Addicting Videos)",
+    "name": "Sensei Filter",
     "version": "1.2.1",
     "permissions": [
         "storage",
@@ -19,7 +19,7 @@
     },
     "content_scripts": [
         {
-            "matches": ["*://*.youtube.com/*"],
+            "matches": ["all_url"],
             "js": ["content.js"]
         }
     ],
