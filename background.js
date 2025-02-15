@@ -31,15 +31,12 @@ chrome.storage.onChanged.addListener((changes) => {
             tabs.forEach((tab) => {
                 chrome.scripting.executeScript({
                     target: { tabId: tab.id },
-                    func: updateKeywordsOnPage,
+                    func: (newKeywords) => {
+                        window.postMessage({ type: "updateKeywords", keywords: newKeywords }, "*");
+                    },
                     args: [changes.keywords.newValue]
-                });
+                }).catch(err => console.error("Script execution error:", err));
             });
         });
     }
 });
-
-// Function to send keywords to content.js
-function updateKeywordsOnPage(newKeywords) {
-    window.postMessage({ type: "updateKeywords", keywords: newKeywords }, "*");
-}
