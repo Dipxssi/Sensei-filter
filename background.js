@@ -57,7 +57,7 @@ chrome.runtime.onInstalled.addListener(() => {
                 "Drama","Buzz","Confession","Reaction Videos","Sketch","Short Film","Lifestyle Vlog","Cooking","DIY Hacks","Fails Compilation","Epic","Clips",
                 "Highlights","Compilation","Bloopers","Memes Compilation","Chill Music","Gaming Clips","Gameplays","Let’s Play","Walkthrough","Speedrun",
                 "Esports","Parody","Spoof","Comic","Stand-Up","Comedy Skit","Prank Wars","Roast","Viral Moments","Social Experiment","Challenge Video",
-                "Fake News","Rumors","Sensational","Shock","Entertainment","Distraction","Mindless","Humor","Escapism","Thugesh"
+                "Fake News","Rumors","Sensational","Shock","Entertainment","Distraction","Mindless","Humor","Escapism","Thugesh","Anime","Webtoons","Mangas","Manwhas"
 
 
             ];
